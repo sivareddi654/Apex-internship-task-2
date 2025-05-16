@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+form, .gallery-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.2);
+}
+
+button {
+  background: #2575fc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #05ba2c;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#gallery .img-card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+#gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery .delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  form, .gallery-section {
+    width: 90%;
+  }
+}

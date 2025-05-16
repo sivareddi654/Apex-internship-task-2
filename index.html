@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 2 – Image Gallery Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ApexPlanet Internship – Task 2</h1>
+  </header>
+
+  <section class="form-section">
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="tel" id="phone" placeholder="Your Phone Number" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Dynamic Image Gallery</h2>
+    <input type="text" id="imageUrl" placeholder="Enter image URL" />
+    <button onclick="addImage()">Add Image</button>
+    <div id="gallery"></div>
+  </section>
+
+  <footer>
+    <p>Responsive layout with Flexbox and Grid</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
